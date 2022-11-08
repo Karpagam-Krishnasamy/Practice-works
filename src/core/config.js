@@ -1,6 +1,6 @@
 const config = {
-	countStart: 0,
-	increment: 1,
+	timeDelay: 1000,
+	squareCount: 10,
 };
 
 export default config;

@@ -1,9 +1,11 @@
-const increaseCount = ({ state, data }) => ({
-	count: state.count + data,
+import ShapeManager from '../services/ShapeManager';
+
+const getSquare = (context) => ({
+	shapes: ShapeManager.getSquare(context),
 });
 
 const actions = {
-	increaseCount,
+	getSquare,
 };
 
 export default actions;

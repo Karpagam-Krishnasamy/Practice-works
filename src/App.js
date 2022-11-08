@@ -1,12 +1,14 @@
-import { React } from 'react';
+import { React, useEffect } from 'react';
 import './App.scss';
-import SimpleButton from './components/simpleButton';
+import Background from './components/Background';
+import Ticker from './services/Ticker';
 
-const App = ({ state: { count, refreshID }}) =>
-	<div className="App" role="application">
-		<div>Count: { count }</div>
-		<div>{ SimpleButton() }</div>
-		<div>Refresh ID: { refreshID }</div>
+const App = (context) => {
+	useEffect(() => Ticker.start(context), []);
+
+	return <div className="App" role="App">
+		<Background { ...context }/>
 	</div>;
+};
 
 export default App;
