@@ -8,9 +8,10 @@ const Square = ({ state: { shapes }}) =>
 				position: 'absolute',
 				width: `${ size }vmin`,
 				height: `${ size }vmin`,
-				left: `${ left }vmin`,
-				top: `${ top }vmin`,
+				left: '50%',
+				top: '50%',
 				backgroundColor: 'black',
+				transform: 'translate(-50%, -50%) ',
 			} }
 		/>);
 
