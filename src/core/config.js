@@ -1,6 +1,10 @@
 const config = {
-	timeDelay: 10000,
+	timeDelay: 1000,
 	squareCount: 10,
+	minSize: 5,
+	maxSize: 10,
+	minSpace: 3,
+	maxSpace: 97,
 };
 
 export default config;
