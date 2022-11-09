@@ -1,15 +1,15 @@
 import React from 'react';
 
 const Square = ({ state: { shapes }}) =>
-	shapes.map(({ size, top, left }, index) =>
+	shapes.map(({ size, x, y }, index) =>
 		<div
 			key={ index }
 			style={ {
 				position: 'absolute',
 				width: `${ size }vmin`,
 				height: `${ size }vmin`,
-				left: '50%',
-				top: '50%',
+				left: `${ x }vmin`,
+				top: `${ y }vmin`,
 				backgroundColor: 'black',
 				transform: 'translate(-50%, -50%) ',
 			} }

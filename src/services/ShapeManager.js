@@ -6,8 +6,8 @@ const ShapeManager = {
 		[...shapes,
 			{
 				size: rndBetween(5, 10),
-				top: rndBetween(1, 90),
-				left: rndBetween(1, 90),
+				top: rndBetween(5, 95),
+				left: rndBetween(5, 95),
 			}],
 };
 
